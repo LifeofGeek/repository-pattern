@@ -2,10 +2,10 @@
 
 namespace App\Repositories;
 
-
+use App\Contracts\PostInterface;
 use App\Post;
 
-class PostRepository
+class PostRepository implements PostInterface
 {
     protected $post;
 

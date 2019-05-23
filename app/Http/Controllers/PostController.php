@@ -2,13 +2,13 @@
 
 namespace App\Http\Controllers;
 
-use App\Repositories\PostRepository;
+use App\Contracts\PostInterface;
 
 class PostController extends Controller
 {
     protected $post;
 
-    public function __construct(PostRepository $post)
+    public function __construct(PostInterface $post)
     {
         $this->post = $post;
     }
